@@ -25,6 +25,8 @@ basedir                 = /usr
 # Instead of skip-networking the default is now to listen only on
 # localhost which is more compatible and is not less secure.
 bind-address            = 0.0.0.0
+# bind-address            = 127.0.0.1 # Se cambió para que abra el puerto 3306 con cualquiera ...
+# ... que sea la IP del contenedor
 
 #
 # * Fine Tuning
