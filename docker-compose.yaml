@@ -1,0 +1,42 @@
+version: "3"
+
+services:
+  shell: 
+    image: ubuntu
+    stdin_open: true
+    tty: true
+    container_name: shell
+    links: 
+      - mariadb
+
+  mariadb:
+    image: mariadb
+    container_name: mariadb
+    ports:
+      - 4407:3306
+    volumes:
+      - type: volume
+        source: dbdata
+        target: /var/lib/mysql
+        volume:
+          nocopy: true
+      - type: bind
+        source: ./mariadb-server.cnf
+        target: /etc/mysql/mariadb.conf.d/50-server.cnf
+    environment:
+      MARIADB_ROOT_PASSWORD: P4ssw0rd
+      MARIADB_USER: mariadb
+      MARIABD_PASWORD: P4ssw0rd
+      MARIADB_DATABASE: Mini
+  
+  adminer:
+    image: adminer
+    container_name: adminer
+    restart: always
+    ports:
+      - 8081:8080
+    links:
+      - mariadb
+
+volumes:
+  dbdata:
