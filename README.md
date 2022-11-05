@@ -9,5 +9,5 @@ Subgrupo _3_:
   + Sebastián Gordillo Patiño    jsgordillo@poligran.edu.co
   + Luis Salas Alfonso           lsalas@poligran.edu.co
   + Ramón Barrios Láscar         elbarrios1@poligran.edu.co
-  + Manuel Coy
+  + Manuel Coy                   macoyben@poligran.edu.co
 
