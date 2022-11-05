@@ -1,5 +1,6 @@
 # Proyecto para el Módulo de Integración Continua
 
+![Logo](https://colombianjoker.github.io/Logo_Poli_100.png)
 **Politécnico Grancolombiano**
 _Integración Continua - 2022-H2 B02_
 
