@@ -1,5 +1,5 @@
 <!--
-<!DOCTYPE html>*/
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,16 +10,18 @@
 <body>
   <h1>Hola Mundo !!</h1>
 </body>
-</html>
+</html> 
 -->
 
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+
 <head>
    <meta charset="UTF8">
    <title>Politecnico - Grupo 3</title>
    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
+
 <body>
    <section id="container">
       <form action="" method="post">
@@ -27,10 +29,17 @@
          <img src="Imagenes/login.png" alt="Login">
          <input type="text" name="usuario" placeholder="Usuario">
          <input type="password" name="clave" placeholder="Contraseña">
-         <input type="submit" value="Registrar">
-         <div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>
+         <div class="alert">
+            <?php echo isset($alert) ? $alert : ''; ?>
+         </div>
          <input type="submit" value="Ingresar">
+         <p>
+         <p>
+            <input type="submit" value="Registrar">
+         </p>
+         </p>
       </form>
    </section>
 </body>
+
 </html>
