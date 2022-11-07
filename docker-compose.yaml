@@ -1,6 +1,11 @@
 version: "3"
 
 services:
+  node:
+    image: bitnami/node
+    container_name: node
+    links:
+      - mariadb
   shell: 
     image: ubuntu
     stdin_open: true
@@ -37,6 +42,7 @@ services:
       - 8081:8080
     links:
       - mariadb
+  
 
 volumes:
   dbdata:
