@@ -4,15 +4,15 @@ services:
   node:
     image: bitnami/node
     container_name: node
+    command: "node index.js"
     links:
       - mariadb
-  shell: 
-    image: ubuntu
-    stdin_open: true
-    tty: true
-    container_name: shell
-    links: 
-      - mariadb
+    volumes:
+      - type: volume
+        source: app
+        target: /app
+        volume:
+          nocopy: true
 
   mariadb:
     image: mariadb
@@ -26,7 +26,7 @@ services:
         volume:
           nocopy: true
       - type: bind
-        source: ./mariadb-server.cnf
+        source: $PWD/mariadb-server.cnf
         target: /etc/mysql/mariadb.conf.d/50-server.cnf
     environment:
       MARIADB_ROOT_PASSWORD: P4ssw0rd
@@ -43,6 +43,6 @@ services:
     links:
       - mariadb
   
-
 volumes:
   dbdata:
+  app:
