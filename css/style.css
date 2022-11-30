@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*Estilo*/
 /*API - 1*/
 body{
@@ -10,7 +9,7 @@ body{
   background-attachment: fixed;
   background-position: center;
 }
-=======
+
 *{
 	margin:0;
 	padding: 0;
@@ -74,5 +73,3 @@ h3{
 	font-size: 10px;
 	text-align: center;
 }
-
->>>>>>> e570597382b5d8ae0ad60307441cb25b730a8ead
