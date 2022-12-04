@@ -1,3 +1,15 @@
+/*Estilo*/
+/*API - 1*/
+body{
+  background-image: url(../imagenes/imagen_pagina_web_pl.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  min-height: 95vh;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 *{
 	margin:0;
 	padding: 0;
@@ -61,4 +73,3 @@ h3{
 	font-size: 10px;
 	text-align: center;
 }
-
