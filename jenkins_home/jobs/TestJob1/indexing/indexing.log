@@ -1,0 +1,29 @@
+Started
+[Mon Nov 21 14:46:38 UTC 2022] Starting branch indexing...
+[8mha:////4D50exu1HPHAL32HmIvnm4c149K6BZwFDNIQL6fExks8AAAAhR+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTLrOWnLgEAxPNPMo4AAAA=[0mConnecting to https://api.github.com using /******
+Examining [8mha:////4FdhW8znSgI/DPQo97e6/qsW1qfjXtBYh4Djbe/MjA58AAAAth+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQLmEwyygpKSi20tdPzyzJKE0C6srVD05NSiwuyUzM03XPL0rJzMnJ1w3QDdX31HWODyjKr0xNLskHAKhsS0u7AAAA[0mSebastian-Gordillo-P-U/I-C_Proyecto
+
+  Checking branches...
+
+  Getting remote branches...
+
+    Checking branch [8mha:////4OlU7gNDtU0M/9zGpQkkmTK0mcODMsO0iScmNShUZdd0AAAAvR+LCAAAAAAAAP9djD0KwjAYhj/rzwEcxSu02RyUgtBBC0UKxVlSG5JomoTkq7TX8Bq6eAiP4x2sdPNZ3md5n+cHpt7BUjSVNzo6G+2NYtG+s8wpqa8Hg2wVP17x3b4DCFKYKaY5igzGjVMI8+xCb5Qoqjkp0EnNN62DxV8uGfYXg4FRANDaXiYIW4Fo/ZoQLlE0Zf+qScFK6lFSHe6Mq6RSJszDI0nD5JQ707EzGoKOMVJTqb/Eu8DExQAAAA==[0mmain
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+
+    Checking branch [8mha:////4KMShukzUKUtozyp3ZvJIu4FURH6XjR5zm/lvSFLsrfgAAAAvh+LCAAAAAAAAP9djDEOgkAQRUeMHMDSeAXYzkJjI4WSEENCrM2CE1hddsnsYPAaXkMbD+FxvIMYOn/zf/H+e35g4gjmVXty1oSFNc5qDHe3Bkkrc9lbxsX68Vrfm7cHXgy+RlNylcC4Jc0wTc7yKoWWphQZkzLlqiOY/emioX8yGDLyALqmHz7DpmJu3FKIUnHV5v2rFhnm0rGSJthaOimtbZAGBxEH0TEle8OCrWBCFHWPIX0B+Q5WSccAAAA=[0mmaster
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+
+  2 branches were processed
+
+  Checking pull-requests...
+
+  Getting remote pull requests...
+
+  0 pull requests were processed
+
+Finished examining Sebastian-Gordillo-P-U/I-C_Proyecto
+
+[Mon Nov 21 14:46:39 UTC 2022] Finished branch indexing. Indexing took 1.4 sec
+Finished: SUCCESS
