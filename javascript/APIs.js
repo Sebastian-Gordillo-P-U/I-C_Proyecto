@@ -13,6 +13,8 @@ function personasSeleccionados(datosSeleccionados){
 
 personasSeleccionados(datos =>{
 
-  console.log(datos)
+  //Datos de visualizacion
+  const datosVista = datos.results[0].name
+  document.getElementById('datosPersonaje').innerHTML = datosVista
 
 });
