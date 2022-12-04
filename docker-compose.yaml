@@ -2,9 +2,10 @@ version: "3"
 
 services:
   node:
-    image: bitnami/node
+    image: bitnami/express
     container_name: node
-    command: "node index.js"
+    hostname: node
+    command: node /app/index.js
     links:
       - mariadb
     volumes:
@@ -17,6 +18,7 @@ services:
   mariadb:
     image: mariadb
     container_name: mariadb
+    hostname: mariadb
     ports:
       - 4407:3306
     volumes:
@@ -37,12 +39,25 @@ services:
   adminer:
     image: adminer
     container_name: adminer
-    restart: always
+    hostname: adminer
+    restart: unless-stopped
     ports:
       - 8081:8080
     links:
       - mariadb
+    
+  jenkins:
+    image: jenkins/jenkins
+    container_name: jenkins
+    hostname: jenkins
+    ports:
+      - 1080:1080
+    volumes:
+      - type: volume
+      - source: jenkins_home
+      target: /var/jenkins_home
   
 volumes:
   dbdata:
   app:
+  jenkins_home:
