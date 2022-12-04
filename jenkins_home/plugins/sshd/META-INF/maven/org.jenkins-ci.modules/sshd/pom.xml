@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.modules</groupId>
   <artifactId>sshd</artifactId>
-  <version>3.249.v2dc2ea_416e33</version>
+  <version>3.270.vb_a_e71e64c287</version>
   <packaging>hpi</packaging>
   <name>SSH server</name>
   <description>Adds SSH server functionality to Jenkins, exposing CLI commands through it</description>
@@ -18,7 +18,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/sshd-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/sshd-plugin.git</developerConnection>
-    <tag>2dc2ea416e3300ad210e3943b471204d562e6d18</tag>
+    <tag>bae71e64c28714afb31739897e99dbcca431b50a</tag>
     <url>https://github.com/jenkinsci/sshd-plugin</url>
   </scm>
   <distributionManagement>
@@ -35,7 +35,7 @@
     <dependency>
       <groupId>io.jenkins.plugins.mina-sshd-api</groupId>
       <artifactId>mina-sshd-api-core</artifactId>
-      <version>2.8.0-36.v8e25ce90d4b_1</version>
+      <version>2.9.2-50.va_0e1f42659a_a</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -69,16 +69,9 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>net.jcip</groupId>
-      <artifactId>jcip-annotations</artifactId>
-      <version>1.0</version>
-      <scope>provided</scope>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>animal-sniffer-annotations</artifactId>
-      <version>1.21</version>
+      <version>1.22</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
@@ -100,13 +93,7 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.29</version>
-        <extensions>true</extensions>
-      </plugin>
-      <plugin>
-        <groupId>org.kohsuke.stapler</groupId>
-        <artifactId>maven-stapler-plugin</artifactId>
-        <version>1.17</version>
+        <version>3.35</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>

@@ -52,5 +52,11 @@
     <hudson.model.TimeZoneProperty>
       <timeZoneName>America/Bogota</timeZoneName>
     </hudson.model.TimeZoneProperty>
+    <jenkins.security.LastGrantedAuthoritiesProperty>
+      <roles>
+        <string>authenticated</string>
+      </roles>
+      <timestamp>1670190117315</timestamp>
+    </jenkins.security.LastGrantedAuthoritiesProperty>
   </properties>
 </user>
