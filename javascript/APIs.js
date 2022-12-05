@@ -14,7 +14,9 @@ function personasSeleccionados(datosSeleccionados){
 personasSeleccionados(datos =>{
 
   //Datos de visualizacion
-  const datosVista = datos.results[0].name
-  document.getElementById('datosPersonaje').innerHTML = datosVista
+  for (var i = 0; i < 4; i++){
+    const datosVista = datos.results[i].name
+    document.getElementById('datosPersonaje'+i).innerHTML = datosVista
+  }
 
 });
