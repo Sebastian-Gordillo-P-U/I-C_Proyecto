@@ -6,6 +6,8 @@ services:
     container_name: node
     hostname: node
     command: node /app/index.js
+    ports:
+      - 2080:80
     links:
       - mariadb
     volumes:
@@ -45,19 +47,7 @@ services:
       - 8081:8080
     links:
       - mariadb
-    
-  jenkins:
-    image: jenkins/jenkins
-    container_name: jenkins
-    hostname: jenkins
-    ports:
-      - 1080:1080
-    volumes:
-      - type: volume
-      - source: jenkins_home
-      target: /var/jenkins_home
   
 volumes:
   dbdata:
   app:
-  jenkins_home:
