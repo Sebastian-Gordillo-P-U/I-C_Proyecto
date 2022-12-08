@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+  jenkins:
+    image: jenkins/jenkins
+    container_name: jenkins
+    hostname: jenkins
+    ports:
+      - 1080:8080
+    networks:
+      - CI
+    volumes:
+      - type: bind
+        source: $PWD/jenkins_home
+        target: /var/jenkins_home
+
+volumes:
+  jenkins_home:
+
+networks:
+  CI:
+    name: CI
+    driver: bridge
+    
