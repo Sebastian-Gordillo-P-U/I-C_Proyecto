@@ -71,7 +71,10 @@ services:
 volumes:
   dbdata:
   app:
+<<<<<<< HEAD
   jenkins_home:
+=======
+>>>>>>> d8211385d29e46e063c93a98f3d4794b2e32c1e2
 
 networks:
   CI:
