@@ -1,19 +1,15 @@
-<<<<<<< HEAD
 const mariadb = require('mariadb');
 const ruta = require('path')
 var express = require('express');
 var app = express();
-=======
 const express = require('express');
 const app = express();
 const port = 3000;
->>>>>>> 69591a15198879cced66744bf770f805d5a62484
 
 app.use(express.json());
 app.listen(port, ()=>{
 	console.log('Server is listening on port',port,'...');
 });
-<<<<<<< HEAD
 
 //Conexión Base de Datos
 const conexion_BD = mariadb.createPool({
@@ -43,11 +39,9 @@ solicitudConexion()
 
 //   console.log('Example app listening at http://%s:%s', host, port);
 // });
-=======
 app.get('/customers', (req,res)=>{
 	res.send(
 		{ id: 1, name: "Ramón", },
 	);
 });
->>>>>>> 69591a15198879cced66744bf770f805d5a62484
 
