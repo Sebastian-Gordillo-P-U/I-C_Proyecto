@@ -1,21 +1,24 @@
-version: "3"
+version: "3.7"
 
 services:
   node:
-    image: bitnami/express
+    image: node-app-ci
     container_name: node
     hostname: node
+    build:
+      context: app
+      dockerfile: Dockerfile
     command: node /app/index.js
     ports:
-      - 2080:80
+      - 2080:3000
+    networks:
+      - CI
     links:
       - mariadb
     volumes:
       - type: volume
         source: app
         target: /app
-        volume:
-          nocopy: true
 
   mariadb:
     image: mariadb
@@ -23,6 +26,8 @@ services:
     hostname: mariadb
     ports:
       - 4407:3306
+    networks:
+      - CI
     volumes:
       - type: volume
         source: dbdata
@@ -45,9 +50,17 @@ services:
     restart: unless-stopped
     ports:
       - 8081:8080
+    networks:
+      - CI
     links:
       - mariadb
   
 volumes:
   dbdata:
   app:
+
+networks:
+  CI:
+    name: CI
+    driver: bridge
+    
