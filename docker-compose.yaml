@@ -71,6 +71,7 @@ services:
 volumes:
   dbdata:
   app:
+  jenkins_home:
 
 networks:
   CI:
