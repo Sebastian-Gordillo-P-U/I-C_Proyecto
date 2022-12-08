@@ -1,0 +1,34 @@
+version: "3.7"
+
+services:
+  mariadb:
+    image: mariadb
+    container_name: mariadb
+    hostname: mariadb
+    ports:
+      - 4407:3306
+    networks:
+      - CI
+    volumes:
+      - type: volume
+        source: dbdata
+        target: /var/lib/mysql
+        volume:
+          nocopy: true
+      - type: bind
+        source: $PWD/mariadb-server.cnf
+        target: /etc/mysql/mariadb.conf.d/50-server.cnf
+    environment:
+      MARIADB_ROOT_PASSWORD: P4ssw0rd
+      MARIADB_USER: mariadb
+      MARIABD_PASWORD: P4ssw0rd
+      MARIADB_DATABASE: Mini
+  
+volumes:
+  dbdata:
+
+networks:
+  CI:
+    name: CI
+    driver: bridge
+    
